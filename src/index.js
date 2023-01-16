@@ -9,7 +9,13 @@ import movies from './reducers';
 
 const store = createStore(movies);
 console.log('store', store);
-console.log('state', store.getState());
+console.log('beforestate', store.getState());
+
+store.dispatch({
+  type:'ADD_MOVIES',
+  movies: [{name:'supermab'}]
+});
+console.log('afterstate', store.getState());
 
 
 
