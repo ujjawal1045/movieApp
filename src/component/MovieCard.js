@@ -22,7 +22,7 @@ class MovieCard extends React.Component {
                 </div>
              </div>
            
-          );
+          ); 
     }
   
 }
